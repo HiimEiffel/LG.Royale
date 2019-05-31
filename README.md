@@ -13,12 +13,12 @@
     <img src="https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Documentation</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    It's a simple CSharp Clash Royale server.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the pics »</strong></a>
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
@@ -131,4 +131,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
 [license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: https://choosealicense.com/licenses/mit
-[product-screenshot]: https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/screenshot.png
+[product-screenshot]: https://i.imgur.com/aPNar2c.png
