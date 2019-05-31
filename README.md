@@ -9,8 +9,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template/blob/master/logo.png">
-    <img src="logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/xxxtarnatiiion/LG.Royale/">
+    <img src="https://img.icons8.com/nolan/96/000000/clash-royale.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
@@ -28,23 +28,6 @@
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </p>
-
-
-
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
-
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
 
 
 <!-- ABOUT THE PROJECT -->
