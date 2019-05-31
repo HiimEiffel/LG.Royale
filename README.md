@@ -18,14 +18,14 @@
   <p align="center">
     It's a simple CSharp Clash Royale server.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the pics »</strong></a>
+    <a href="https://github.com/xxxtarnatiiion/LG.Royale/"><strong>Explore the pics »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/xxxtarnatiiion/LG.Royale/">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/xxxtarnatiiion/LG.Royale/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/xxxtarnatiiion/LG.Royale/issues">Request Feature</a>
   </p>
 </p>
 
