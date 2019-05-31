@@ -41,19 +41,8 @@ Please note:
 * This server is written for the version 1.9.0 of the game.
 * Your time should be focused on creating something amazing.
 
-### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+### Tools
 * [Visual Studio](https://visualstudio.microsoft.com)
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 
@@ -61,7 +50,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Léo GDZ / [xxxtarnatiiion@5731]
+xxxtarnatiiion@5731
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
