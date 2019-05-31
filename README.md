@@ -9,7 +9,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template/blob/master">
+  <a href="https://github.com/othneildrew/Best-README-Template/blob/master/logo.png">
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
