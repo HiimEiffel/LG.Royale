@@ -1,2 +1,2 @@
 # LG.Royale
-ROYALE'S SERIES SERVER. © 2019 - LonelyGamers
+© 2019 - LonelyGamers
