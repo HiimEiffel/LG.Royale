@@ -10,7 +10,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/xxxtarnatiiion/LG.Royale/">
-    <img src="https://img.icons8.com/nolan/96/000000/clash-royale.png" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
