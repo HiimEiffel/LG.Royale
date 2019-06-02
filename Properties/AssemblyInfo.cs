@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("LG.Royale")]
+[assembly: AssemblyTitle("LG.Barbarian")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LG.Royale")]
+[assembly: AssemblyProduct("LG.Barbarian")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Le GUID suivant est pour l'ID de la typelib si ce projet est exposé à COM
-[assembly: Guid("cdcc1895-6a42-4ce2-bbed-835293ebf7d6")]
+[assembly: Guid("ae8a5336-fec3-49a5-afc2-9182daa2b953")]
 
 // Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 //

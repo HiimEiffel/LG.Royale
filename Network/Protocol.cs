@@ -1,55 +1,85 @@
 ﻿using System;
+using System.Diagnostics;
 
-using LG.Royale.Hype;
-using LG.Royale.Packets;
+using LG.Barbarian.Core;
+using LG.Barbarian.Traffic;
 
-namespace LG.Royale.Network
+namespace LG.Barbarian.Network
 {
     class Protocol
     {
-
-        /// <summary>
-        /// Protocol's decrypter.
-        /// </summary>
-        public static Encrypter Encrypter = new Encrypter();
 
         /// <summary>
         /// Follows the protocol.
         /// </summary>
         public static void Follow()
         {
-            Encrypter Decrypter = new Encrypter();
-
+            Program.Log("Minion's king has connected.", false);
+            
             while (true)
             {
-                byte[] Packet  = Encrypter.Process(Gateway.Receive(), Decrypter);
-                int Identifier = Hype.Packet.GetIdentifier(Packet);
+                byte[] Incoming = Protocol.Catch();
+                int Identifier  = Packet.Identify(Incoming);
 
-                if (Identifier == Login.Identifier)
+                #region Packets
+                if (Identifier == ClientHello.Identifier)
                 {
-                    new Login();
+                    new ClientHello();
                 }
 
-                if (Identifier == KeepAlive.Identifier)
+                if (Identifier == NeedHelp.Identifier)
                 {
-                    new KeepAlive();
+                    new NeedHelp();
+                }
+                #endregion
+                #region Commands
+                if (Identifier == 14600)
+                {
+                    new RequestNewName(Incoming);
                 }
 
-                if (Identifier == RequestNewName.Identifier)
+                if (Identifier == 14102)
                 {
-                    new RequestNewName(Packet);
+                    new EndClient(Incoming);
                 }
 
-                if (Identifier == EndClientTurn.Identifier)
+                if (Identifier == BattleNPC.Identifier)
                 {
-                    new EndClientTurn(Packet);
+                    new BattleNPC();
                 }
 
-                if (Identifier == 14104)
+                if (Identifier == 14101)
                 {
-                    Console.WriteLine(BitConverter.ToString(Packet));
+                    new GetHomeData();
                 }
+                #endregion
             }
+        }
+
+        /// <summary>
+        /// Catches an incoming packet.
+        /// </summary>
+        public static byte[] Catch()
+        {
+            byte[] Draft = new byte[2048];
+            int Length   = Gateway.Client.Receive(Draft);
+
+            byte[] Packet = new byte[Length];
+            Array.Copy(Draft, Packet, Length);
+
+            byte[] Patched = Core.Packet.Patch(Packet, Gateway.Decrypter);
+            Debug.WriteLine("[<] " + Core.Packet.Identify(Packet));
+            return Patched;
+        }
+
+        /// <summary>
+        /// Throws a specified packet.
+        /// </summary>
+        /// <param name="Packet"></param>
+        public static void Throw(byte[] Packet)
+        {
+            Gateway.Client.Send(Packet);
+            Debug.WriteLine("[>] " + Core.Packet.Identify(Packet));
         }
     }
 }

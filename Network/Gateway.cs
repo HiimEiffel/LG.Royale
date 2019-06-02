@@ -2,12 +2,9 @@
 using System.Net;
 using System.Net.Sockets;
 
-using System.Diagnostics;
+using LG.Barbarian.Hype;
 
-using LG.Royale.Hype;
-using LG.Royale.Interface;
-
-namespace LG.Royale.Network
+namespace LG.Barbarian.Network
 {
     class Gateway
     {
@@ -18,48 +15,35 @@ namespace LG.Royale.Network
         public static Socket Server, Client;
 
         /// <summary>
-        /// Listens on the specified address.
+        /// Gateway's encryption tools.
         /// </summary>
-        /// <param name="Config"></param>
-        public static void Start(Configuration Configuration)
+        public static Rivest Encrypter, Decrypter;
+
+        /// <summary>
+        /// Listens to the specified address.
+        /// </summary>
+        /// <param name="IPAddress"></param>
+        /// <param name="Port"></param>
+        public static void Start(IPAddress IPAddress, int Port)
         {
-            Display.Load();
+            Encrypter = new Rivest();
+            Decrypter = new Rivest();
 
             Server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            Server.Bind(new IPEndPoint(Configuration.IPAddress, Configuration.Port));
-            Server.Listen(Configuration.MaxPeople);
+            Server.Bind(new IPEndPoint(IPAddress, Port));
+            Server.Listen(150);
 
+            Program.Log("Socket has been started.", false);
+            Program.Log("Server has been started.", false);
+            Program.Log(null);
+            
             while (true)
             {
                 Client = Server.Accept();
                 break;
             }
 
-            Display.Log("Client has connected.");
             Protocol.Follow();
-        }
-
-        /// <summary>
-        /// Receives a packet.
-        /// </summary>
-        public static byte[] Receive()
-        {
-            byte[] Empty  = new byte[2048];
-            byte[] Filled = Packet.Fill(Empty, Client.Receive(Empty));
-            Debug.WriteLine("[+] Client: " + Packet.GetIdentifier(Filled));
-
-            return Filled;
-        }
-
-        /// <summary>
-        /// Sends a specified packet.
-        /// </summary>
-        public static int Send(byte[] Packet)
-        {
-            Client.Send(Packet);
-            Debug.WriteLine("[+] Server: " + Hype.Packet.GetIdentifier(Packet));
-
-            return Hype.Packet.GetIdentifier(Packet);
         }
     }
 }
