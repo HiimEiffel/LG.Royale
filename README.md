@@ -39,6 +39,7 @@ These servers were used at the time of version 1.9.0. I rewrote some of them so 
 
 Please note:
 * This server is written for the version 1.9.0 of the game.
+* You can now fight Trainers, with modified '.csv', '.sc'.
 * Your time should be focused on creating something amazing.
 
 ### Tools
@@ -57,4 +58,4 @@ xxxtarnatiiion@5731
 [contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
 [license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: https://choosealicense.com/licenses/mit
-[product-screenshot]: https://i.imgur.com/aPNar2c.png
+[product-screenshot]: https://i.imgur.com/hkklHdE.png
