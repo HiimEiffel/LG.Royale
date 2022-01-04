@@ -1,0 +1,19 @@
+version: x.x.{build}
+branches:
+  only:
+  - main
+image: Visual Studio 2019
+configuration: Debug
+install:
+- cmd: git submodule update --init --recursive
+nuget:
+  disable_publish_on_pr: true
+before_build:
+- cmd: appveyor-retry nuget restore
+build:
+  project: Royale.sln
+  parallel: true
+  verbosity: normal
+artifacts:
+- path: bin/Debug/
+  name: LG.Royale
